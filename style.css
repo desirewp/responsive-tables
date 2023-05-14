@@ -1,6 +1,77 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background: rgb(26, 27, 31);
+}
+
+section {
+  margin: 4rem 3rem;
+}
+
+table {
+  width: 100%;
+  background: rgb(48, 49, 51);
+  border-radius: 0 0 15px 15px;
+  border-collapse: collapse; /* Tar bort mellanrummet mellan alla celler */
+}
+
+caption,
+th,
+td {
+  padding: 1rem;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+caption {
+  background: rgb(130, 34, 219);
+  font-size: 1.5rem;
+  border-radius: 15px 15px 0px 0;
+}
+
+th {
+  background: rgb(62, 44, 77);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Skapar zebramönstret */
+tr:nth-of-type(2n) {
+  background: rgb(37, 38, 39);
+}
+
+@media (max-width: 800px) {
+ input[type=checkbox]{
+    width: 20px;
+ }
+    th {
+    display: none;
+  }
+  td {
+    display: grid;
+    grid-template-columns: 9ch auto; /* ch står för character så 7 bokstäver bred + auto */
+    gap: 0.80rem;
+    padding: 0.6rem 1rem;
+  }
+  td::before {
+    content: attr(data-cell) ": "; /* Sätter innehållet framför till värdet av attributet data-cell + :  */
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  td:first-child {
+    padding-top: 1.5rem;
+  }
+
+  td:last-child {
+    padding-bottom: 1.5rem;
+  }
+}

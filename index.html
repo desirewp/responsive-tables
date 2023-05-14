@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="/assets/croissant.png" />
+    <!-------------------- CSS LINKS----------- -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive tables</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Responsive tables</h1>
+        <p>Shrink the window to see them work!</p>
+      </section>
+      <section>
+        <table>
+          <caption>
+            Movies to watch
+          </caption>
+          <tr>
+            <th>Watched</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Genre</th>
+            <th>Length</th>
+            <th>Trailer</th>
+          </tr>
+          <tr>
+            <td data-cell="watched">
+              <input type="checkbox" name="watched" />
+            </td>
+            <td data-cell="title">Avatar: The way of water</td>
+            <td data-cell="year">2022</td>
+            <td data-cell="genre">Fantasy</td>
+            <td data-cell="length">3h 12m</td>
+            <td data-cell="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=d9MyW72ELq0"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Avatar: The Way of Water | Official Trailer</a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td data-cell="watched">
+              <input type="checkbox" name="watched" />
+            </td>
+            <td data-cell="title">The Flash</td>
+            <td data-cell="year">2023</td>
+            <td data-cell="genre">Action, Superhero</td>
+            <td data-cell="length"></td>
+            <td data-cell="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=hebWYacbdvc"
+                target="_blank"
+                rel="noopener noreferrer"
+                >The Flash – Official Trailer</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="watched">
+              <input type="checkbox" name="watched" />
+            </td>
+            <td data-cell="title">Oppenheimer</td>
+            <td data-cell="year">2023</td>
+            <td data-cell="genre">Thriller</td>
+            <td data-cell="length"></td>
+            <td data-cell="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=uYPbbksJxIg"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Oppenheimer | New Trailer</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="watched">
+              <input type="checkbox" name="watched" checked />
+            </td>
+            <td data-cell="title">The Batman</td>
+            <td data-cell="year">2022</td>
+            <td data-cell="genre">Action, Superhero</td>
+            <td data-cell="length">2h 56m</td>
+            <td data-cell="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=mqqft2x_Aa4"
+                target="_blank"
+                rel="noopener noreferrer"
+                >THE BATMAN – Main Trailer</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="watched">
+              <input type="checkbox" name="watched" />
+            </td>
+            <td data-cell="title">Dune: Part Two</td>
+            <td data-cell="year">2023</td>
+            <td data-cell="genre">SciFi</td>
+            <td data-cell="length"></td>
+            <td data-cell="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=ABfQGtUEEzA"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Dune: Part Two | Official Trailer</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="watched">
+              <input type="checkbox" name="watched" checked />
+            </td>
+            <td data-cell="title">Joker</td>
+            <td data-cell="year">2019</td>
+            <td data-cell="genre">Thriller, Drama</td>
+            <td data-cell="length">2h 2m</td>
+            <td data-cell="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=zAGVQLHvwOY"
+                target="_blank"
+                rel="noopener noreferrer"
+                >JOKER - Final Trailer - Now Playing In Theaters</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="watched">
+              <input type="checkbox" name="watched" />
+            </td>
+            <td data-cell="title">Kingsman: The secret service</td>
+            <td data-cell="year">2014</td>
+            <td data-cell="genre">Action, Comedy</td>
+            <td data-cell="length">2h 10m</td>
+            <td data-cell="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=kl8F-8tR8to"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Kingsman: The Secret Service | Official Trailer 2 [HD] | 20th
+                Century FOX</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="watched">
+              <input type="checkbox" name="watched" />
+            </td>
+            <td data-cell="title">Tenet</td>
+            <td data-cell="year">2020</td>
+            <td data-cell="genre">Action, Thriller</td>
+            <td data-cell="length">2h 30m</td>
+            <td data-cell="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=L3pk_TBkihU"
+                target="_blank"
+                rel="noopener noreferrer"
+                >TENET - NEW TRAILER</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="watched">
+              <input type="checkbox" name="watched" checked />
+            </td>
+            <td data-cell="title">Guardians of the Galaxy Vol. 3</td>
+            <td data-cell="year">2023</td>
+            <td data-cell="genre">SciFi, Superhero</td>
+            <td data-cell="length">2h 29m</td>
+            <td data-cell="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=u3V5KDHRQvk"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Marvel Studios’ Guardians of the Galaxy Vol. 3 | Official
+                Trailer</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td data-cell="watched">
+              <input type="checkbox" name="watched" />
+            </td>
+            <td data-cell="title">Aquaman 2</td>
+            <td data-cell="year">2023</td>
+            <td data-cell="genre">Superhero, Action</td>
+            <td data-cell="length"></td>
+            <td data-cell="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=nA7-qKCg3B8"
+                target="_blank"
+                rel="noopener noreferrer"
+                >AQUAMAN 2: The Lost Kingdom – First Trailer (2023)
+              </a>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
